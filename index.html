@@ -8,7 +8,38 @@
 </head>
 <body>
   <div class="container">
-    
+    <div class="search-box">
+      <input type="text" id="city-input" placeholder="Enter city name...">
+      <button id="search-btn">Search</button>
+    </div>
+
+    <div class="weather-info" id="weather-info">
+      <!-- Weather data will be displayed here -->
+      <h2 class="city-name" id="city-name">City Name</h2>
+      
+      <div class="temperature">
+        <h1 id="temp">--°C</h1>
+      </div>
+
+      <div class="description">
+        <p id="description">Weather description</p>
+      </div>
+
+      <div class="details">
+        <div class="humidity">
+            <p>Humidity</p>
+            <span id="humidity">--%</span>
+        </div>
+        <div class="wind">
+            <p>Wind Speed</p>
+            <span id="wind-speed">-- km/h</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="error" id="error">
+      <p>City not found. Please try again!</p>
+    </div>
   </div>
   <script src="script.js"></script>
 </body>
