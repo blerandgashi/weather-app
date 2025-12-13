@@ -9,6 +9,10 @@ body{
   align-items: center;
   justify-content: center;
 }
+h1{text-align: center;
+  margin-bottom: 25px;
+  color: rgb(78, 168, 14)
+}
 .container {
     background: rgba(255, 255, 255, 0.9);
     border-radius: 20px;
@@ -33,7 +37,6 @@ body{
 }
 
 #city-input:focus {
-    outline: none;
     background: #e0e0e0;
 }
 
@@ -41,7 +44,7 @@ body{
   padding: 12px 25px;
   border: none;
   border-radius: 10px;
-  background: #667eea;
+  background: rgb(106, 198, 40);
   color: white;
   font-size: 16px;
   cursor: pointer;
@@ -49,7 +52,7 @@ body{
 }
 
 #search-btn:hover {
-    background: #5568d3;
+    background: #5668cf;
 }
 
 .weather-info {
@@ -82,11 +85,11 @@ body{
 }
 
 .details {
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
-    background: #f0f0f0;
-    border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background: #f0f0f0;
+  border-radius: 10px;
 }
 
 .humidity, .wind {
