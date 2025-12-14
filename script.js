@@ -33,6 +33,21 @@ async function getWeatherInfos() {
 }
 
 searchBtn.addEventListener("click", function(){
-  getWeatherInfos();
-  cityInputEl.value = ""
+  if(cityInputEl.value.trim() !== ""){
+    getWeatherInfos();
+    cityInputEl.value = "";
+  }else{
+    weatherInfo.classList.remove("active");
+    error.classList.add("active");
+  }
+})
+
+cityInputEl.addEventListener("keypress", function(e){
+  if (e.key === 'Enter' && cityInputEl.value.trim() !== "") {
+    getWeatherInfos();
+    cityInputEl.value = "";
+  }else{
+    weatherInfo.classList.remove("active");
+    error.classList.add("active");
+  }
 })
